@@ -21,7 +21,7 @@ vertical-align: baseline;
 }
 /*GENERAL STYLES*/
 *{
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
 html{
@@ -101,13 +101,13 @@ nav span{
     justify-content: center;
     align-items: center;
     height:100vh;
-    margin:5% 0;
+    margin:3% 0;
 }	
 .title-container div:hover {	
     opacity: 80%;	
 }	
 .title-container hr{
-    width:80%;
+    width:90%;
 }
 button{
     padding:1% 3%;
@@ -141,7 +141,7 @@ button:hover{
     text-align:center;
     padding: 2%;
     justify-content: center;
-    margin: 5% auto;
+    margin: 0% auto;
     width: 100%  
 }
 
@@ -149,14 +149,67 @@ button:hover{
 
 
 .artist img{
-    max-width: 90%;
+    width: 85%;
     margin-bottom:5%;
-    height: 50vh
+    height: 50vh;
 
 }
 
 .artist .bio {
     max-width: auto;
-    margin: 3% 0;
-    
+    margin: 3% auto;
+}
+
+/* 500 px Media Query */
+
+@media(max-width: 500px) {
+    a{
+        font-size: 2.2rem;
+    }
+
+    nav {
+        width: 50%;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+    nav span{
+        height: 65%;
+        border-left:2px solid #626262;
+    }
+
+    .title-container div{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        height: 70vh;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    button{
+        padding: 2% 6%;
+
+    }
+
+    .title-container hr{
+        width:100%;
+        color: white;
+    }
+
+    .artists-container{
+        flex-direction: column;
+        margin: 10%;
+    }
+
+    .artist div{
+        margin: 5%
+
+    }
+
+   .artist img {
+       width: 65%;
+       height: auto;
+   }
 }

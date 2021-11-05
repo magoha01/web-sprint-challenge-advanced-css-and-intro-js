@@ -256,14 +256,14 @@ function get20s(array) {
   
   for(let i = 0; i < array.length; i++){
     
-  //   if(array[i].key.(0,2) === 19){
+    if(array[i].key.split(0,2) === 9){
       
-  //     newArray.push(array[i].key2);
+      newArray.push(array[i].key2);
   }
-
+return newArray
 }
 
-// console.log(get20s(artists, "id", "9", "years", "name"))
+
 
 
 

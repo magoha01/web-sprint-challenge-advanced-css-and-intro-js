@@ -250,17 +250,30 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*yourcodehere*/) {
-/* //   let newArray = [];
-//   for (let i = 0; i < artists.length; i++) {
-//     if (artists.i.years >= 1900 && artists.i.years <= 2000){
-//         artists.name.push(newArray)    
-//   }
-// }
-// return newArray;
-// } */
+const newArray = []
+
+for(let i = 0; i < artists.length; i++) {
+  if (artists[i].years.substring(0,2) === 19){
+    newArray.push(artists[i].name)
+  }
 }
-// console.log(get20s(artists))
+console.log(newArray)
+
+function get20s(/*array, key1, key2*/) {
+/*
+  const newArray = [];
+  birthArray =[Object.values]
+  }
+  for(let i = 0; i < array.length; i++){
+    
+    if(array[i].key.substring(0,2) === 19){
+      // push the result to a new array if this is true
+      newArray.push(array[i].key2);
+    }
+
+}*/
+}
+// console.log(get20s(artists, "id", "9", "years", "name"))
 
 
 
@@ -310,10 +323,20 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
+function lotsOfArt(array, key1, key2) {
 
+  let busyPainters = [];
+  
+
+for(let i=0; i < array.length; i++){
+  let howMany = array[i].key
+    if (howMany.charAt(2) === 1) {
+      busyPainters.push(array[i].key2);
+    }
+    return busyPainters;
+  }
+}
+console.log(lotsOfArt(artists, "paintings", "name"));
 
 /* ***** END OF TASKS ***** */
 

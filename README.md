@@ -24,17 +24,31 @@ Please answer the following questions below, you may edit the readme file to inc
 
 1. How would you describe accessibility on the web to someone new to programming?
 
+Accessibility is keeping in mind all users, and making sure you are creating content that is accessible to all, including those who may have a disability. 
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
+You can choose your colors mindfully using palettes that are colorblind friendly.
+
+You use a screen reader to see if your content is tagged semantically/properly and reading clearly.
+
+ You can make sure to include discriptive alts for any images you use.
+
+ 
 
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a sort of container that store all different types of data (numbers, strings, objects, etc). They can be changeable (such as var or let) or can be given a constant value (such as const).
 
 
 4. What is the purpose of using functions in code?
 
+functions are block of code in which you instruct the computer to complete a sequence of tasks for you.
+
 
 5. How do you access a key inside of an object inside of an array?
+
+array[i].key
 
 
 

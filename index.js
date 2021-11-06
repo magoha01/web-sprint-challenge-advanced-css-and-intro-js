@@ -251,18 +251,21 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
+  let newArray = [];
 
-  const newArray = [];
-  
-  for(let i = 0; i < array.length; i++){
-    
-    if(array[i].key.split(0,2) === 9){
+    for (let i = 0; i < array.length; i++){
+       let name = array[i].name
+       let years = array[i].years
+       years = years.split('');
       
-      newArray.push(array[i].key2);
-  }
-return newArray
+      if (years[1].includes(9)){
+        newArray.push(name)
+      }
+    }
+    return newArray
 }
 
+console.log(get20s(artists))
 
 
 
@@ -313,18 +316,18 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array, key1, key2) {
+function lotsOfArt(array) {
 
   let busyPainters = [];
   
 for(let i=0; i < array.length; i++){
-
-    if (array[i][key1] > 100){
-
-      busyPainters.push(array[i][key2]);
-    }
-    return busyPainters;
+    let paintingNum = array[i].paintings
+    
+  if (paintingNum > 100){
+      busyPainters.push(array[i].name);
+    } 
   }
+  return busyPainters;
 }
 console.log(lotsOfArt(artists, "paintings", "name"));
 

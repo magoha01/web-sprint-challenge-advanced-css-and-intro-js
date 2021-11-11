@@ -283,7 +283,7 @@ function removeArtist(array, index) {
   array.splice(index,1)
   return array.length
 }
-// console.log(removeArtist(artists, 0));
+console.log(removeArtist(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 

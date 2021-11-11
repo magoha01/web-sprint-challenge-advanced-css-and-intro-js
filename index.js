@@ -208,11 +208,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-// console.log(artists[0].name)
+console.log(artists[0].name)
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-// console.log(artists[2].bio)
+console.log(artists[2].bio)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -250,8 +250,8 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array) {
-  let newArray = [];
+function get20s(/*array*/) {
+ /* let newArray = [];
 
     for (let i = 0; i < array.length; i++){
        let name = array[i].name
@@ -262,10 +262,10 @@ function get20s(array) {
         newArray.push(name)
       }
     }
-    return newArray
+    return newArray */
 }
 
-console.log(get20s(artists))
+//console.log(get20s(artists))
 
 
 
@@ -316,9 +316,9 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array) {
+function lotsOfArt(/*array*/) {
 
-  let busyPainters = [];
+/* let busyPainters = [];
   
 for(let i=0; i < array.length; i++){
     let paintingNum = array[i].paintings
@@ -328,8 +328,10 @@ for(let i=0; i < array.length; i++){
     } 
   }
   return busyPainters;
+
+console.log(lotsOfArt(artists, "paintings", "name"));*/
 }
-console.log(lotsOfArt(artists, "paintings", "name"));
+
 
 /* ***** END OF TASKS ***** */
 
